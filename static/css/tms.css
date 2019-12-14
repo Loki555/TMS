@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*编写注册页面*/
+#bg_img1{
+    position: fixed;
+    width: 100%;
+}
+#log_cnt{
+    position: fixed;
+    left: 50%;
+    top: 90px;
+    margin-left: -200px;
+    width: 400px;
+    /*height: 600px;*/
+}
+#log_logo{
+    width: 400px;
+    height: 100px;
+    margin: 10px 0;
+}
+#log_logo img{
+    width: 200px;
+    height: 90px;
+    margin: 5px 100px;
+}
+#log_form{
+    width: 400px;
+    /*height: 450px;*/
+    margin: 10px 0;
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+#log_form span{
+    display: block;
+    width: 380px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 65px;
+}
+#log_form .form_title{
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+#log_form .log_form_input{
+    width: 320px;
+    height: 45px;
+    margin-left: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+#log_form .log_form_sub {
+    width: 320px;
+    height: 45px;
+    margin-left: 25px;
+    font-size: 24px;
+    background-color: #3cccff;
+    color: #fff;
+}
+#log_form .log_act{
+    width: 320px;
+    height: 45px;
+    margin-left: 40px;
+    font-size: 16px;
+}
+#log_form .log_act a{
+        color: #3cccff;
+}
+#log_footer{
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    margin: 10px auto;
+    width: 1366px;
+    text-align: center;
+}
+/*注册页面编写结束*/
+
+
+
+/*登录页面编写*/
+#scan{
+    width: 400px;
+    height: 65px;
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 5px;
+    margin-top: 20px;
+    line-height: 65px;
+}
+#scan img{
+    width: 30px;
+    height: 30px;
+}
+#scan span{
+    margin-left: 20px;
+    display: inline-block;
+}
+#scan span a{
+    color: #000;
+}
+/*登录页面结束*/
+
+/*页面header样式编写*/
+#header{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    background-color: rgb(224,194,113);
+}
+#header .header{
+    width: 1366px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#header .header .head_logo img{
+    width: 90px;
+    height: 40px;
+    margin: 0 10px;
+    float: left;
+    overflow: hidden;
+}
+#header .header .head_info{
+    width: 200px;
+    height: 40px;
+    float: right;
+}
+#header .header .head_info span{
+    font-size: 12px;
+    display: inline-block;
+    width: 100px;
+    line-height: 40px;
+    color: #fff;
+    float: left;
+}
+/*页面header样式编写结束*/
+
+/*页面主体部分*/
+#content{
+    width: 100%;
+    height: 668px;
+    position: fixed;
+    top: 50px;
+}
+#content .content{
+    width: 1366px;
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 0.7;
+}
+#content .content .info_list{
+    width: 236px;
+    margin: 0 5px;
+    float: left;
+}
+#content .content .info_list .user_info{
+    width: 236px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#content .content .info_list .user_info .user_img{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    float: left;
+}
+#content .content .info_list .user_info .user_img img{
+    width: 90px;
+    height: 90px;
+}
+#content .content .info_list .user_info .user_detail{
+    width: 126px;
+    height: 90px;
+    margin: 5px;
+    float: left;
+}
+#content .content .info_list .user_info .user_detail span{
+    display: block;
+    width: 126px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+#content .content .info_list .task_info{
+    width: 236px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#content .content .info_list .task_info a{
+    color: #000;
+}
+#content .content .info_list .task_info div{
+    width: 236px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#content .content .info_list .task_info div:hover{
+    background-color: rgb(224,194,113);
+}
+#task_info1_1,#task_info4_1{
+    display: none;
+    position: absolute;
+    width: 200px;
+    left: 278px;
+    top: 110px;
+    background-color: rgb(224,194,113);
+    /*opacity: 0.9;*/
+    border-radius: 5px;
+    list-style-type: none;
+
+}
+#task_info4_1{
+    top: 260px;
+}
+#task_info1_1 li{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    z-index: 99;
+}
+#task_info1_1 li:hover,
+#task_info4_1 li:hover{
+    background-color: #D8A566;
+}
+#task_info1_1 li a{
+    color: #000;
+}
+#content .content .task_list,
+#content .content .task_detail{
+    width: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 5px;
+    float: left;
+}
+#content .content .task_list .list_d_or_n{
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+}
+#content .content .task_list .list_d_or_n span{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin: 40px 49px 10px;
+    background-color: rgb(224,194,113);
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: larger;
+}
+#content .content .task_list .list_d_or_n .list_n{
+    background-color: #D8A566;
+}
+#content .content .task_list .list_search{
+    width: 500px;
+    height: 40px;
+    margin: 0 auto;
+}
+#content .content .task_list .list_search .list_search_cnt{
+    width: 200px;
+    height: 20px;
+}
+#content .content .task_list .list_search .list_search_sub{
+    display: inline-block;
+    width: 50px;
+    height: 27px;
+    margin-left: 10px;
+    font-size: 14px;
+    background-color: rgb(224,194,113);
+}
+#content .content .task_list .list_line{
+    border-bottom: 3px solid #000;
+    width: 500px;
+    margin: 20px auto;
+}
+#content .content .task_list .list_detail{
+    width: 500px;
+    margin: 0 auto 20px;
+}
+#content .content .task_list .list_detail table .list_table{
+    width: 500px;
+    height: 40px;
+    text-align: left;
+    font-size: 14px;
+}
+#content .content .task_list .list_detail table .list_table:hover{
+    background-color: rgb(224,194,113);
+}
+#content .content .task_list .list_detail table .list_table td a{
+    color: #000;
+}
+#content .content .task_list .list_pages{
+    width: 500px;
+    height: 30px;
+    margin: 0 auto 30px;
+}
+#content .content .task_list .list_pages span{
+    display: inline-block;
+    width: 45px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+#content .content .task_list .list_pages span a{
+    color: #000;
+}
+#content .content .task_detail .task_detail_detail{
+    width: 500px;
+    margin: 30px auto;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bolder;
+}
+#content .content .task_detail .task_detail_title,
+#content .content .task_detail .task_detail_pub,
+#content .content .task_detail .task_detail_ddl,
+#content .content .task_detail .task_detail_djs,
+#content .content .task_detail .task_detail_content1,
+#content .content .task_detail .task_detail_attach1{
+    width: 500px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+}
+#content .content .task_detail .task_detail_djs{
+    color: red;
+}
+#content .content .task_detail .task_detail_content2,
+#content .content .task_detail .task_detail_attach2{
+    width: 500px;
+    margin: 0 auto 20px;
+    font-size: 14px;
+}
+#content .content .task_detail .task_detail_attach2 a{
+    color: #000;
+    text-decoration: underline black;
+}
+/*页面主体编写完毕*/
+
+/*修改信息部分编写*/
+#content .content .mdf_user{
+    width: 1110px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+    float: left;
+}
+#content .content .mdf_user .mdf_user_form{
+    width: 500px;
+    margin: 25px auto;
+}
+#content .content .mdf_user .mdf_user_form form div{
+    width: 500px;
+    height: 50px;
+    margin: 0 5px;
+}
+#content .content .mdf_user .mdf_user_form form .mdf_img{
+    height: 90px;
+    margin-bottom: 30px;
+}
+#content .content .mdf_user .mdf_user_form form .mdf_img img{
+    width: 90px;
+    height: 90px;
+    border: solid 1px #ccc;
+}
+#content .content .mdf_user .mdf_user_form form .mdf_img a{
+    color: black;
+    font-size: 14px;
+}
+#content .content .mdf_user .mdf_user_form form div input{
+    width: 350px;
+    height: 30px;
+    font-size: 16px;
+}
+#content .content .mdf_user .mdf_user_form form div .mdf_btn{
+    width: 100px;
+    margin-left: 80px;
+    background-color: rgb(224,194,113);
+}
+
+/*页脚部分编写*/
+#footer{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(224,194,113);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    opacity: 0.8;
+}
+#footer .footer{
+    width: 1366px;
+    margin: 0 auto;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+/*页脚部分编写完毕*/

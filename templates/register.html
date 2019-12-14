@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--{% block title %}-->
+    <title>TMS 注册</title>
+    <!--{% endblock %}-->
+    <link rel="stylesheet" href="/static/css/tms.css">
+</head>
+<body>
+
+    <img src="/static/images/bg_img1.jpg" alt="" id="bg_img1">
+
+    <div id="log_cnt">
+        <div id="log_logo">
+            <img src="/static/images/logo.png" alt="">
+        </div>
+        <!--{% block index_form %}-->
+        <div id="log_form">
+            <span class="form_title">注册用户</span>
+            <form action="#">
+
+            <span>
+                <input type="text" placeholder="手机或邮箱" name="account" class="log_form_input">
+            </span>
+            <span>
+                <input type="password" placeholder="密码 6-12位非空" name="password" class="log_form_input">
+            </span>
+            <span>
+                <input type="password" placeholder="确认密码" name="password_c" class="log_form_input">
+            </span>
+            <span>
+                <input type="submit" value="注册" class="log_form_sub">
+            </span>
+            <span class="log_act">
+                <a href="./login.html">已有账号</a>
+            </span>
+
+            </form>
+        </div>
+        <!--{% endblock %}-->
+    </div>
+
+    <div id="log_footer">
+        &copy;2019 六进程并行小组
+    </div>
+
+</body>
+</html>
